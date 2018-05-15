@@ -1,6 +1,7 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-2">&nbsp;</div>
+        <div class="col-sm-4">
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">Burgers to Eat</h3>
@@ -10,5 +11,29 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-4">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Burgers you have Eaten</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="burgersEaten"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">&nbsp;</div>
+        <div class="col-sm-4">
+            <form role="form" class="form-inline">
+                <div class="form-group">
+                    <label for="addBurger">Add a Burger:</label>
+                    <input type="text" class="form-control" id="addBurger" placeholder="Burger">
+                </div>
+                <button type="submit" class="btn btn-default" id="btnSubmit">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-4">&nbsp;</div>
     </div>
 </div>
