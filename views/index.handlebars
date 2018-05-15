@@ -7,17 +7,33 @@
                     <h3 class="panel-title">Burgers to Eat</h3>
                 </div>
                 <div class="panel-body">
-                    <div id="burgersToEat"></div>
+                    <div id="burgersToEat">
+                        <ol>
+                            {{#each burgers}}
+                                {{#unless devoured}}
+                                    <li>{{burger_name}} <button class="btn btn-default devour" data-id="{{id}}">Devour It</button></li>
+                                {{/unless}}
+                            {{/each}}
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-warning">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Burgers you have Eaten</h3>
+                    <h3 class="panel-title">Burgers You Have Eaten</h3>
                 </div>
                 <div class="panel-body">
-                    <div id="burgersEaten"></div>
+                    <div id="burgersEaten">
+                        <ol>
+                            {{#each burgers}}
+                                {{#if devoured}}
+                                    <li>{{burger_name}}</li>
+                                {{/if}}
+                            {{/each}}
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
