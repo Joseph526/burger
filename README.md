@@ -13,7 +13,7 @@ Added a New Burger
 ![Screenshot 02](public/assets/images/screenshot02.png)
 
 ## Install and Run
-Clone the repository to your local machine. Run `npm install` to install the dependencies. Import `./db/schema.sql` then `./db/seeds.sql` in your favorite MySQL administrator console. Then run `node start` to start the server on `localhost:8080`.
+Clone the repository to your local machine. Run `npm install` to install the dependencies. Import `./db/schema.sql` then `./db/seeds.sql` in your favorite MySQL administrator console. Then run `npm start` to start the server on `localhost:8080`.
 
 ## Deployed Site
 [https://young-cove-19477.herokuapp.com/](https://young-cove-19477.herokuapp.com/)
